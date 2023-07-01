@@ -5,7 +5,8 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "storybook": "storybook dev -p 6006 -c .integrated_storybook/.storybook",
+    "storybook:react": "storybook dev -p 6006 -c .react_storybook/.storybook",
+    "storybook:vue": "storybook dev -p 6006 -c .vue_storybook/.storybook",
     "build-storybook": "storybook build"
   },
   "devDependencies": {
@@ -16,6 +17,8 @@
     "@storybook/react": "^7.0.24",
     "@storybook/react-vite": "^7.0.24",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "@storybook/vue3": "^7.0.24",
+    "@storybook/vue3-vite": "^7.0.24",
     "@turbo/gen": "^1.9.7",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
@@ -37,6 +40,7 @@
     "storybook": "^7.0.24",
     "turbo": "latest",
     "typescript": "^5.1.6",
+    "vue": "^3.2.47",
     "vue-eslint-parser": "^9.3.1"
   },
   "packageManager": "pnpm@7.15.0",
