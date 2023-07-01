@@ -31,7 +31,8 @@
     "typecheck": "tsc --noEmit",
     "build:fast": "tsup src",
     "prepack": "clean-package",
-    "postpack": "clean-package restore"
+    "postpack": "clean-package restore",
+    "test": "vitest run"
   },
   "devDependencies": {
     "@emotion/css": "^11.11.2",

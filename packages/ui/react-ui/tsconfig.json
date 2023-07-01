@@ -1,4 +1,4 @@
 {
     "extends": "tsconfig/react-library.json",
-    "include": ["src", "stories", "index.ts"]
+    "include": ["src", "stories", "index.ts", "__test__"]
   }

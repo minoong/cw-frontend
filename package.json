@@ -7,7 +7,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "storybook:react": "storybook dev -p 6006 -c .react_storybook/.storybook",
     "storybook:vue": "storybook dev -p 6006 -c .vue_storybook/.storybook",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test": "turbo run test"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.24",
@@ -19,12 +20,16 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "@storybook/vue3": "^7.0.24",
     "@storybook/vue3-vite": "^7.0.24",
+    "@testing-library/react": "^14.0.0",
     "@turbo/gen": "^1.9.7",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
+    "@vitejs/plugin-react": "^4.0.1",
+    "@vitejs/plugin-vue": "^4.1.0",
     "@vue/eslint-config-typescript": "^11.0.3",
+    "@vue/test-utils": "^2.4.0",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "^8.8.0",
@@ -35,6 +40,8 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-storybook": "^0.6.12",
     "eslint-plugin-vue": "^9.15.1",
+    "happy-dom": "^9.20.3",
+    "jsdom": "^22.1.0",
     "prettier": "^2.8.8",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -43,6 +50,7 @@
     "tsup": "^7.1.0",
     "turbo": "latest",
     "typescript": "^5.1.6",
+    "vitest": "^0.32.2",
     "vue": "^3.2.47",
     "vue-eslint-parser": "^9.3.1"
   },
