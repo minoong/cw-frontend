@@ -13,7 +13,8 @@ function getStories({ dir = 'ui' }) {
 
 const config: StorybookConfig = {
   stories: [
-    ...getStories({ dir: 'ui' }),
+    // ...getStories({ dir: 'ui' }),
+    "../../packages/ui/react-ui/stories/*.stories.@(js|jsx|ts|tsx)",
    ],
   addons: [
     "@storybook/addon-links",
