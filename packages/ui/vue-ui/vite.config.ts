@@ -17,7 +17,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'lmw-vue-ui',
       formats: ['es', 'cjs'],
-      fileName: 'lmw-vue-ui',
+      fileName: (format) => `index.${format === 'cjs' ? 'js' : 'mjs'}`,
     },
     rollupOptions: {
       external: ['vue'],

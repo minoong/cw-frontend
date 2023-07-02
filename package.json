@@ -2,13 +2,15 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "build:force": "turbo run build --force",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "storybook:react": "storybook dev -p 6006 -c .react_storybook/.storybook",
     "storybook:vue": "storybook dev -p 6006 -c .vue_storybook/.storybook",
     "build-storybook": "storybook build",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "clean": "pnpm -r --parallel exec rimraf dist .turbo *.log"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.24",
@@ -46,6 +48,7 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rimraf": "^5.0.1",
     "storybook": "^7.0.24",
     "tsup": "^7.1.0",
     "turbo": "latest",
