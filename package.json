@@ -10,9 +10,13 @@
     "storybook:vue": "storybook dev -p 6006 -c .vue_storybook/.storybook",
     "build-storybook": "storybook build",
     "test": "turbo run test",
-    "clean": "pnpm -r --parallel exec rimraf dist .turbo *.log"
+    "clean": "pnpm -r --parallel exec rimraf dist .turbo *.log",
+    "add-changeset": "changeset add",
+    "version-packages": "changeset version",
+    "release": "changeset publish --access"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "@storybook/addon-essentials": "^7.0.24",
     "@storybook/addon-interactions": "^7.0.24",
     "@storybook/addon-links": "^7.0.24",

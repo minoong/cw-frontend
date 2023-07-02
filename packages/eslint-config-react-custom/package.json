@@ -2,8 +2,5 @@
   "name": "eslint-config-react-custom",
   "version": "0.0.0",
   "main": "index.js",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  }
+  "license": "MIT"
 }

@@ -1,6 +1,6 @@
 {
-  "name": "lmw-vue-ui",
-  "version": "0.0.2",
+  "name": "lmw-vue-ui-test",
+  "version": "1.0.0",
   "sideEffects": false,
   "files": [
     "dist"
