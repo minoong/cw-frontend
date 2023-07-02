@@ -45,6 +45,7 @@ const buttonDisabled = computed<boolean>(() => {
 </script>
 
 <template>
+  #1
   <div v-if="wrapMode" class="btn_wrap" :class="wrapClass" tabindex="0">
     <button :type="type" :class="noneStyle ? '' : ['btnBasic', size, color, { disabled }, { auto }]" :disabled="buttonDisabled" @click="handleClick" @keyup.enter="handleKeyup">
       <span v-if="label">{{ label }}</span>
